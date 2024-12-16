@@ -8,5 +8,5 @@ spring:
 
 eureka:
     client:
-        registerWithEureka: false # Do not register with self. It will only be a server.
-        fetchRegistry: false # Do not fetch registry from other services.
+        registerWithEureka: false  # Do not register with self. It will only be a server.
+        fetchRegistry: false  # Do not fetch registry from other services.
