@@ -1,1 +1,12 @@
-spring.application.name=service-registry
+#spring.application.name=service-registry
+server:
+    port: 8761
+
+spring:
+    application:
+        name: dl-service-registry
+
+eureka:
+    client:
+        registerWithEureka: false # Do not register with self. It will only be a server.
+        fetchRegistry: false # Do not fetch registry from other services.
