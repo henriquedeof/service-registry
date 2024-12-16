@@ -8,7 +8,7 @@ import org.springframework.cloud.netflix.eureka.server.EnableEurekaServer;
 @EnableEurekaServer
 public class ServiceRegistryApplication {
 
-    // Open http://localhost:8761/ in your browser to see the Eureka dashboard
+    // Open http://localhost:8761/ in your browser to see the Eureka dashboard.
     public static void main(String[] args) {
         SpringApplication.run(ServiceRegistryApplication.class, args);
     }
