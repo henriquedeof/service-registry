@@ -1,0 +1,17 @@
+server:
+    port: ${PORT}
+
+dl:
+    serviceRegistry:
+        username: ${EUREKA_USERNAME}
+        password: ${EUREKA_PASSWORD}
+
+eureka:
+    client:
+        registerWithEureka: false  # Do not register with self. It will only be a server.
+        fetchRegistry: false  # Do not fetch registry from other services.
+        service-url:
+            defaultZone: ${EUREKA_URL}
+    instance:
+        hostname: ${APP_DOMAIN_NAME}
+        non-secure-port: 80
