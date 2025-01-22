@@ -1,0 +1,15 @@
+#spring.application.name=service-registry
+server:
+    port: 8761
+
+dl:
+    serviceRegistry:
+        username: admin
+        password: 'admin'
+
+eureka:
+    client:
+        registerWithEureka: false  # Do not register with self. It will only be a server.
+        fetchRegistry: false  # Do not fetch registry from other services.
+        service-url:
+            defaultZone: 'http://${dl.serviceRegistry.username}:${dl.serviceRegistry.password}@localhost:8761/eureka'
